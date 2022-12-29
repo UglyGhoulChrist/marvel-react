@@ -1,0 +1,13 @@
+.list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
