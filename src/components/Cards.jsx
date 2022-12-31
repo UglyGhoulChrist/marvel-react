@@ -1,23 +1,29 @@
-import { useState, useEffect } from "react";
+// Загрузка URL
+// import { useState, useEffect } from "react";
 import Card from "./Card";
 import styles from "./Cards.module.scss";
 // Загрузка с файла
-// import { characters } from "../data/data.js";
+import { characters } from "../data/data.js";
 import Title from "./Title";
 
 function Cards() {
-  const URL = "https://bravevillainousexponents.dbronskih.repl.co/characters";
-  const [characters, setCharacters] = useState([]);
+  // Загрузка URL
+  // const URL = "https://bravevillainousexponents.dbronskih.repl.co/characters";
+  // const [characters, setCharacters] = useState([]);
   // const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch(URL)
-      .then((response) => response.json())
-      .then((characters) => setCharacters(characters))
-      // .catch((error) => setError(error.message))
-      .finally(() => setLoading(false));
-  }, []);
+  // Загрузка с файла
+  const loading = false;
+
+  // Загрузка URL
+  // useEffect(() => {
+  //   fetch(URL)
+  //     .then((response) => response.json())
+  //     .then((characters) => setCharacters(characters))
+  // .catch((error) => setError(error.message))
+  //     .finally(() => setLoading(false));
+  // }, []);
   return (
     <div className={styles.list}>
       {loading ? (
